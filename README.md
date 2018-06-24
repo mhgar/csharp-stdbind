@@ -1,5 +1,5 @@
 # Bind() for C#
-A one-class auto-generated library for C# that introduces function binding for C#. Basically just a big file with generic closures.
+A one-class auto-generated library for C# that introduces function binding for C#. Basically just a big file with syntactic sugar for generic closures.
 
 ## Here's a few examples of what it does.
 
