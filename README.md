@@ -4,13 +4,17 @@ A one-class auto-generated library for C# that introduces function binding for C
 ## Here's a few examples of what it does.
 Binding a method with a single parameter and return value.
 ```cs
-var toUpperBinding = BindFunc(ToUpper, "Hello, world!");
+Func<string, string> toUpper = (input) => input.ToUpper;
+
+var toUpperBinding = BindFunc(toUpper, "Hello, world!");
 Console.WriteLine(toUpperBinding()); // "HELLO, WORLD!"
 ```
 
 The compiler needs some help with unsupplied arguments because it won't be able to indentify their types.
 ```cs
-var bindAdd = BindFunc<int, int, int>(Add, 4);
+Func<int, int, int> add = (a, b) => a + b;
+
+var bindAdd = BindFunc<int, int, int>(add, 4);
 Console.WriteLine(bindAdd(4)); // 8
 ```
 
