@@ -1,3 +1,5 @@
+using System;
+
 namespace Wander.Functional {
  public static class Binding {
   /// Get a reference to a function that takes 0 argument(s), filling out 0.
