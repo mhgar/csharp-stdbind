@@ -1,3 +1,5 @@
+Honestly, I used to use this a fair bit but local functions have pretty much replaced the need for me to use this. I'd recommend using those instead.
+
 # Bind() for C#
 A one-class auto-generated library for C# that introduces function binding for C#. Basically just a big file with syntactic sugar for generic closures. You only need to use ``Binding.cs`` unless you intend to modify this for some reason.
 
